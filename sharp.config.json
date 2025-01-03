@@ -1,0 +1,8 @@
+{
+    "jpeg": {
+        "quality": 75,
+        "progressive": true,
+        "optimizeScans": true,
+        "chromaSubsampling": "4:4:4"
+    }
+}

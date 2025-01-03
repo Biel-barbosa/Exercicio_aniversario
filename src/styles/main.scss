@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-image: url(../images/birthday-background-mjge7tf4d4t59phe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+body::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    content: '';
+    z-index: -1;
+}
+
+
+.container {
+    max-width: 920px;
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+
+    @media (max-width: 960px){
+        max-width: 80%;
+    }
+
+    @media(max-width:1024px){
+        max-width: 90%;
+    }
+}
+
+.title{
+    margin-top: 30%;
+    color: #ff8e8e;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 20%; /* Ajuste do espaço superior */
+    }
+}
+
+.infos-bar{
+    padding: 16px 24px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    &__infos{
+        display: flex;
+        gap: 40px;
+        
+
+        &__item{
+            font-size: 14px;
+            color: #000;
+            list-style: none;
+
+            b{
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media(max-width:640px){
+        display: block;
+        &__infos{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    &--primary{
+        color: #fff;
+        background-color: #4f2ac3;
+    }
+
+    @media(max-width:640px){
+        display: block;
+        width: 100%;
+    
+    }
+}
